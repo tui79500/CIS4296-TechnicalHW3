@@ -15,7 +15,7 @@
         html,
         body {
             height: 100%;
-            font-family: 'Merriweather Sans', sans-serif;
+            font-family: 'Times New Roman', sans-serif;
             scroll-behavior: smooth;
         }
 
@@ -82,7 +82,7 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#landing">John Doe<span class="sr-only">(current)</span></a>
+        <a class="navbar-brand" href="#landing">Hassan Ali<span class="sr-only">(current)</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -95,6 +95,9 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#courses">Courses</a>
+                </li>
+		<li class="nav-item">
+                    <a class="nav-link" href="#interests">Interests</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact</a>
@@ -134,13 +137,16 @@
         </div>
         <div class="row my-4">
             <div class="col">
-                <a href="#projects"><button type="button" class="btn btn-outline">Projects</button></a>
+                <a href="#projects"><button type="button" class="btn btn-outline" data-bs-toggle="tooltip" title="My Course Projects">Projects</button></a>
             </div>
             <div class="col">
-                <a href="#courses"><button type="button" class="btn btn-outline">Courses</button></a>
+                <a href="#courses"><button type="button" class="btn btn-outline" data-bs-toggle="tooltip" title="My Technical Courses">Courses</button></a>
+            </div>
+	    <div class="col">
+                <a href="#interests"><button type="button" class="btn btn-outline" data-bs-toggle="tooltip" title="My Hobbies/Interests">Interests</button></a>
             </div>
             <div class="col">
-                <a href="#contact"><button type="button" class="btn btn-outline">Contact</button></a>
+                <a href="#contact"><button type="button" class="btn btn-outline" data-bs-toggle="tooltip" title="My Contact Information">Contact</button></a>
             </div>
         </div>
         <div class="row mt-5 next">
@@ -226,8 +232,8 @@
             </div>
         </div>
         <div class="row mt-5 next">
-            <a href="#contact" class="col"><i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
-                    title="Contact"></i></a> </div>
+            <a href="#interests" class="col"><i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
+                    title="Interests"></i></a> </div>
     </div>
 
     <div class="container landing d-flex justify-content-center flex-column align-items-center" id="interests">
@@ -254,6 +260,7 @@
 		about the engineering behind speed, design, and thrill. The sound of a Lamborghini V12 roaring through
 		a tunnel is unmatched by anything else in this world. If it peaks your interest, just search up a video
 		of a V12 Lamborghini or Lexus LFA, you won't be dissappointed!</p>
+	    <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" title="Popover title" data-image=https://i0.wp.com/masterhorologer.com/wp-content/uploads/2021/05/A.-Lange-Sohne-LANGE-1-Perpetual-Calendar-white-gold-case-back.jpg?fit=1920%2C3412&ssl=1>Click to toggle popover</button>
         </div>
 	<div class="row w-100">
             <h5>Watches</h5>
@@ -265,6 +272,10 @@
 		with a display case-back make looking at the timepieces so much better. If you're interested in checking some out
 		look up A Lange & Sohne case-back on google, you wont be dissappointed!</p>
         </div>
+	
+	<div class="row mt-5 next">
+            <a href="#contact" class="col"><i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
+                    title="Interests"></i></a> </div>
     </div>
 
     <div class="container landing d-flex justify-content-center flex-column align-items-center" id="contact">
